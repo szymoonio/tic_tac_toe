@@ -5,9 +5,9 @@ class Player
     @@players
   end
 
-  attr_accessor :name, :sign, :result
+  attr_accessor :name, :sign
 
-  def initialize(name, sign)
+  def initialize(name)
     @@players += 1
     self.name = name
     if @@players == 1
@@ -15,6 +15,5 @@ class Player
     else 
       self.sign = 'o'
     end
-    self.result = 'tbd'
   end
 end

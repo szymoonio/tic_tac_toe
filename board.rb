@@ -16,9 +16,9 @@ class Board
       self.game_over = true
     elsif rows[0][c] == rows[1][c] && rows[1][c] == rows[2][c]
       self.game_over = true
-    elsif rows[0][0] == rows[1][1] && rows[1][1] == rows[2][2]
+    elsif rows[0][0] != ' ' && rows[0][0] == rows[1][1] && rows[1][1] == rows[2][2]
       self.game_over = true
-    elsif rows[0][2] == rows[1][1] && rows[1][1] == rows[2][0]
+    elsif rows[0][2] != ' ' && rows[0][2] == rows[1][1] && rows[1][1] == rows[2][0]
       self.game_over = true
     end
   end
